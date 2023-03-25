@@ -1,0 +1,106 @@
+<!-- 
+======================================
+; Date: March 26, 2023
+; Created By: Jennifer Hoitenga
+; Sources Used: 
+; YouTube JavaScript Programming Course: https://www.youtube.com/watch?v=jS4aFq5-91M
+; CSS Buttons: https://getcssscan.com/css-buttons-examples
+;=====================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="site.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+
+        <title>Passenger Counter App</title>
+    </head>
+    
+    <body>
+
+        <div id="container">
+        <h1>People Entered:</h1>
+
+        <h2 id="count-el">0</h2>
+
+        <p id="welcome-el"></p>
+        
+        <!-- Adding a button with an onclick event that will call the increment function-->
+        <button class="button-56" id="increment-btn" onclick="increment()">ADD</button>
+
+        <br>
+        <br>
+
+         <!-- Adding a button with an onclick event that will call the save function-->
+        <button class="button-56" id="save-btn" onclick="save()">SAVE</button>
+        
+        <br>
+        <p id="save-el">Previous Entries: </p>
+
+        <p id="depart-el"></p>
+                
+        <!-- Adding a button with an onclick event that will call the depart function-->
+        <button class="button-56" id="depart-btn" onclick="depart()">DEPART</button>  
+                      
+        <script>
+            // Creating a variable for the count-el id
+            let countEl = document.getElementById("count-el");
+
+            // Creating a variable for the save-el id
+            let saveEl = document.getElementById("save-el");
+
+            // Creating a variable for the depart-el id
+            let departEl = document.getElementById("depart-el");
+   
+            // Creating a variable for count and setting it to 0
+            let count = 0;
+
+            // Function that is called when the increment button is clicked.
+            // Number is updated in the countEl variable which updates the count-el id.
+            function increment() {
+                count += 1;
+                countEl.textContent = count;
+                //console.log(count);
+            }
+
+            // Function that is called when the save button is clicked.
+            function save() {
+            let countStr = count + " - ";
+            saveEl.textContent += countStr;
+            countEl.textContent = 0;
+            count = 0;
+            }
+
+            // Function that is called when the depart button is clicked.
+            function depart() {
+            count = 0;
+            countEl.textContent = count;
+            saveEl.textContent = ""
+            }
+
+            let username = "jhoitenga";
+            let message = "You have three new notifications!";
+            //console.log(message + ", " + username + "!");
+
+            let messageToUser = message + ", " + username + "!";
+            //console.log(messageToUser);
+
+            let name = "Jennifer";
+            let greeting = "Welcome back, ";
+            let welcomeBack = greeting + name + "!";
+
+            // Displaying message in the welcome-el id
+            let welcomeEl = document.getElementById("welcome-el").innerText = welcomeBack;
+
+            // Adding wave emoji
+            welcomeBack = greeting + name + "!" + "👋";        
+            //console.log(welcomeBack);
+       
+        </script>
+        </div>
+    </body>
+</html>

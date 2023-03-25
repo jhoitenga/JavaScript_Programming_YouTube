@@ -1,0 +1,103 @@
+* {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  margin: 5px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#container {
+  border: #111 solid;
+  border-radius: 8px;
+  margin: 0px;
+  width: 520px;
+  height: 440px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url("train.jpg");
+  background-size: cover;
+  font-weight: bold;
+}
+
+.button-56 {
+  width: 150px;
+  align-items: center;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+  padding: 0 40px;
+  }
+}
+
+#increment-btn {
+  background-color: #386641;
+}
+
+#save-btn {
+  background-color: darkgoldenrod;
+}
+
+#depart-btn {
+  background-color: #9e2a2b;
+}
