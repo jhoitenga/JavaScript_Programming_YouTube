@@ -14,18 +14,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="site.css">
+    
     
     <title>Document</title>
 </head>
+
 <body>
-
+    <p>See Developer Tools for all tests</p>
+    
     <script>
-
-const os = require("os")
-const chalk = require('chalk');
-console.log(chalk.blue('Hello world!')); 
+    
+    // Using version Chalk version 4.1.2 however I cannot use require
+    const chalk = require('chalk');
+    const log = console.log;
+    console.log(chalk.green("Chalk package is working"));
 
     // Creating variables to show my name in the console
     let firstName = "Jennifer";
