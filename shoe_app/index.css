@@ -1,0 +1,73 @@
+body {
+    background-color: white;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 25px;
+    font-size: large;
+}
+
+#error {
+    color: red;
+    font-weight: 200;
+}
+
+#container {
+    border: #111 solid;
+    border-radius: 8px;
+    margin: 10px;
+    width: 420px;
+    height: 340px;
+    font-weight: bold;
+  }
+
+button {
+  margin: 25px;
+}
+
+.button-46 {
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid darkgray;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all .6s;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+}
+
+.button-46:active,
+.button-46:hover {
+  outline: 0;
+}
+
+.button-46:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+  .button-46 {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
+}

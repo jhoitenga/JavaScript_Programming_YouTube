@@ -1,0 +1,54 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+}
+
+#num1-el {
+  margin-left: 160px;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+#num2-el {
+  margin-left: 4px;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.button-24 {
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  background-color: #5A5569;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: #5A5569;
+  background-position: 0 0;
+  color: chartreuse;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+
+

@@ -1,0 +1,69 @@
+<!-- 
+======================================
+; Date: March 25, 2023
+; Created By: Jennifer Hoitenga
+; Program: Various practice with variables and functions
+; Sources Used: 
+; YouTube JavaScript Programming Course: https://www.youtube.com/watch?v=jS4aFq5-91M
+;=====================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="site.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    // Creating variables to show my name in the console
+    let firstName = "Jennifer";
+    let lastName = "Hoitenga";
+    let fullName = firstName + " " + lastName;
+    console.log(fullName);
+
+    // Creating a greeting for Linda
+    let name = "Linda";
+    let greeting = "Hi there";
+
+    function greetLinda() {
+        console.log(greeting + ", " + name + "!");
+    }
+    greetLinda();
+
+    // Calculating Points - set initial points to 3
+    let myPoints = 3;
+
+    // Add 3 points when function is called
+    function add3Points() {
+        myPoints += 3;
+    }
+
+    // Remove 1 point when function is called
+    function remove1Point() {
+        myPoints -= 1;
+    }
+
+    // Calling the function until we get to 12
+    add3Points();
+    add3Points();
+    add3Points();
+
+    // Calling the function until we minus 2
+    remove1Point();
+    remove1Point();
+
+    // Final output should be 10
+    console.log(myPoints);
+
+    
+    </script>
+</body>
+</html>
