@@ -1,3 +1,5 @@
-# JavaScript_Programming_YouTube
-Programs created from "JavaScript Programming Course" on YouTube from freeCodeCamp.org: https://www.youtube.com/watch?v=jS4aFq5-91M
-YouTube Course created by Per Harald Borgen
+# JavaScript Programming Course
+* Program files created from "JavaScript Programming Course" on YouTube
+* YouTube Channel: https://www.youtube.com/@freecodecamp
+* YouTube Course Link: https://www.youtube.com/watch?v=jS4aFq5-91M
+* Course Created by: Per Harald Borgen. You can find Per on Twitter: https://twitter.com/perborgen
